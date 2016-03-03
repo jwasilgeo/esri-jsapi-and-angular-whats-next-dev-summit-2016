@@ -1,6 +1,5 @@
-# ArcGIS API for JavaScript and AngularJS:
-## What's Next
-
+<h1 style="margin-top: 240px;">ArcGIS API for JavaScript and AngularJS</h1>
+<h2>What's New, What's Next</h2>
 <div style="width: 50%; margin: auto">
 	<div style="width:50%;float:left;">
 	    <p>
