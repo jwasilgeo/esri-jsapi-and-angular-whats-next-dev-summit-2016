@@ -2,6 +2,12 @@
 module.exports = function(grunt) {
 	// Project configuration
 	grunt.initConfig({
+		connect: {
+			example: {
+				port: 1337,
+				base: 'src/slides'
+			}
+		},
 		'gh-pages': {
 			options: {
 				base: 'src/slides'
@@ -11,6 +17,7 @@ module.exports = function(grunt) {
 	});
 
 	// Dependencies
+	grunt.loadNpmTasks('grunt-connect');
 	grunt.loadNpmTasks('grunt-gh-pages');
 
 	// Default task
