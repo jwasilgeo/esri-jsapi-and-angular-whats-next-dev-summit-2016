@@ -4,7 +4,8 @@
   "description": "Dev Summit 2016 Presentation \"ArcGIS API for JavaScript and AngularJS: What's Next\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt connect"
   },
   "repository": {
     "type": "git",
