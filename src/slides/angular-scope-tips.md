@@ -1,14 +1,41 @@
-_(SLIDE IN PROGRESS)_
-## Notes on Angular `$scope`
+## Do I really have to deal with `$scope` and the digest cycle?
 
-- 1- or 2-way property binding between JSAPI (e.g. mapView.watch('zoom', ...); ) and Angular
-    - There’s now a pattern page and live example for property binding
-    - [patterns page here](http://esri.github.io/angular-esri-map/#/patterns/property-binding)
+---
+
+> KEEP CALM WITH THE DIGEST CYCLE AND CARRY ON
+
+(for the most part!)
+
+---
+
+## [Property binding](http://esri.github.io/angular-esri-map/#/patterns/property-binding) between Angular and JSAPI
+
+[![property_binding_chart](img/property_binding_chart.png)](http://esri.github.io/angular-esri-map/#/patterns/property-binding)
+
+---
+
+## Demo: Property Binding
+
+[![mapview_property-binding](img/mapview_property-binding.png)](http://esri.github.io/angular-esri-map/#/examples/property-binding)
+
+---
+
+## When to also consider `$scope.$apply`
 
 - JSAPI async operations
-  - e.g. QueryTask, geometryEngineAsync
-  - ...and any results bound to Angular
 
-- Reminder about proper tear-down/destroy() of JSAPI out-of-the-box widgets during Angular scope destroy
+  - _using_ `esri/tasks/QueryTask`, `esri/geometry/geometryEngineAsync`, ...
 
-- (For the most part you won’t have to worry about Angular digest cycle)
+  - ... and then _updating_ data models bound to Angular
+
+---
+
+## When to think about `$scope.$on`
+
+- Destroy JSAPI widgets when Angular scope is also being destroyed
+
+```javascript
+$scope.$on('$destroy', function() {
+    searchWidget.destroy();
+});
+```
