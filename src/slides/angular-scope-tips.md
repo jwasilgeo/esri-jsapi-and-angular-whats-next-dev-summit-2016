@@ -35,6 +35,7 @@
 - Destroy JSAPI widgets when Angular scope is also being destroyed
 
 ```javascript
+// from the Search Widget example
 $scope.$on('$destroy', function() {
     searchWidget.destroy();
 });
