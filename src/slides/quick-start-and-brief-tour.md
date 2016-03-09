@@ -24,7 +24,7 @@
         <!-- load AngularJS -->
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
         <!-- load angular-esri-map -->
-        <script src="//npmcdn.com/angular-esri-map@2.0.0-beta.1"></script>
+        <script src="//npmcdn.com/angular-esri-map@2.0.0-beta.2"></script>
 
         <script type="text/javascript">
             angular.module('esri-map-example', ['esri.map'])
@@ -80,26 +80,61 @@ _(directly from [README](https://github.com/Esri/angular-esri-map/blob/master/RE
 
 ---
 
-## Quick Start & Brief Tour Takeaways
+## Tell me more about **angular-esri-map v2**!
 
-- less declarative markup than angular-esri-map v1
-  - `<esri-map-view>`, `<esri-scene-view>` 
+---
 
-- `esriLoader.require()` used regularly to interact with JSAPI
-  - _BONUS_: js looks more like JSAPI documentation
+## Less declarative markup
+## than **angular-esri-map v1**
 
-- [getting references to views](http://esri.github.io/angular-esri-map/#/patterns/references-to-views) with
-  - several callback event bindings
-    ```html
-        <esri-map-view on-create="vm.myViewCreatedFunction" ... >
-    ```
-  - the `esriRegistry` service across controllers
-    ```html
-        <esri-scene-view register-as="mySceneView" ... >
-    ```
-    ```js
-        esriRegistry.get('mySceneView').then(function(res) {
-            // establish a click listener on the view in the response
-            res.view.on('click', function(e) {
-            ...
-    ```
+- Focus on
+
+  - `<esri-map-view>`
+
+  - `<esri-scene-view>`
+
+---
+
+## Predictable JavaScript
+
+- Focus on
+
+  - `esriLoader.require()`
+
+- Code looks more like Esri JSAPI docs
+
+---
+
+## [Getting references to views](http://esri.github.io/angular-esri-map/#/patterns/references-to-views) with
+  
+## (1) callback event bindings
+
+```html
+<esri-scene-view 
+    on-create="vm.myViewCreated"
+    on-load="vm.myViewLoaded"
+    on-error="vm.myViewError">
+</esri-scene-view>
+```
+```javascript
+this.myViewCreated = function(view) {
+    // establish a click listener on the view reference
+    res.view.on('click', function(e) {
+    ...
+};
+```
+
+---
+
+## [Getting references to views](http://esri.github.io/angular-esri-map/#/patterns/references-to-views) with
+  
+## (2) `esriRegistry` service
+```html
+<esri-map-view register-as="myMapView" ... >
+```
+```javascript
+esriRegistry.get('myMapView').then(function(res) {
+    // establish a click listener on the view in the response
+    res.view.on('click', function(e) {
+    ...
+```

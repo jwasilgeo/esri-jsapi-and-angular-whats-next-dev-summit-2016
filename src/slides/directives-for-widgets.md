@@ -1,15 +1,57 @@
-_(SLIDE IN PROGRESS)_
-## Patterns for Using & Creating Directives
+## What should we call them?
 
-[Using and Creating Esri Widgets](http://esri.github.io/angular-esri-map/#/patterns/using-creating-widgets)
+## Widgets or directives?
 
-1. JSAPI out-of-the-box Widget: Search Widget example
-  - https://github.com/Esri/angular-esri-map/blob/master/site/app/examples/search.js
-  - esriLoader.require: Search widget and SearchViewModel 
-  - hook into <esri-map-view map="...” on-create="..."> to wait for starting up Search and SearchVM
-  - proper tear-down/destroy() of JSAPI out-of-the-box widgets during Angular scope destroy
-2. JSAPI ViewModel with directive: <esri-home-button> directive and controller src code
-  - esriLoader.require: ONLY HomeViewModel
-  - directive has inline UI template definition
-3. Directive _without_ JSAPI Widget or ViewModel: <esri-webscene-slides> directive
-  - give it 2 things: an array of JSAPI slides, and a callback func for when the active slide changes
+---
+
+## Patterns for [Using & Creating Directives](http://esri.github.io/angular-esri-map/#/patterns/using-creating-widgets)
+
+## (1) JSAPI Out-of-the-Box Widget
+
+- `esriLoader.require()`
+  - load **BOTH** widget UI **AND** widget view model
+
+- `on-create` callback
+  - wait for starting up widget UI and view model
+
+- `$scope.$on('$destroy'...)`
+  - use for proper tear-down
+
+---
+
+## Demo: [Search Widget](http://esri.github.io/angular-esri-map/#/examples/search) example
+
+---
+
+## Patterns for [Using & Creating Directives](http://esri.github.io/angular-esri-map/#/patterns/using-creating-widgets)
+
+## (2) JSAPI ViewModel within Directive
+
+- `esriLoader.require()`
+  - load **ONLY** widget view model
+
+- use the view model in your own directive
+
+---
+
+## Demo: [`<esri-home-button>`](http://esri.github.io/angular-esri-map/#/examples/home-button) example
+
+---
+
+## Patterns for [Using & Creating Directives](http://esri.github.io/angular-esri-map/#/patterns/using-creating-widgets)
+
+## (3) Directive _without_ JSAPI Widget or ViewModel
+
+- JSAPI widget UI or widget view model aren't always necessary
+
+- choose your own path to interact between Angular and JSAPI
+
+  - provide callback event bindings?
+
+  - bind MapView or SceneView references?
+
+---
+
+## Demo: [`<esri-webscene-slides>`](http://esri.github.io/angular-esri-map/#/examples/webscene-slides-as-directive) example
+
+Compare against [WebScene Slides without directive](http://esri.github.io/angular-esri-map/#/examples/webscene-slides) example
