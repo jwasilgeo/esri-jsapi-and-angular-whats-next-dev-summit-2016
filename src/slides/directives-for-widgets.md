@@ -1,6 +1,6 @@
 ## What should we call them?
 
-## Widgets or directives?
+## Widgets or directives or _?
 
 ---
 
@@ -52,6 +52,7 @@
 
 ---
 
-## Demo: [`<esri-webscene-slides>`](http://esri.github.io/angular-esri-map/#/examples/webscene-slides-as-directive) example
+## Demo:
+## [`<esri-webscene-slides>`](http://esri.github.io/angular-esri-map/#/examples/webscene-slides-as-directive) example
 
-Compare against [WebScene Slides without directive](http://esri.github.io/angular-esri-map/#/examples/webscene-slides) example
+compare against [WebScene Slides without directive](http://esri.github.io/angular-esri-map/#/examples/webscene-slides) example

@@ -2,13 +2,14 @@
 
 ---
 
-> KEEP CALM WITH THE DIGEST CYCLE AND CARRY ON
+> KEEP CALM WITH THE DIGEST CYCLE & CARRY ON
 
-(for the most part!)
+(for the most part, but...)
 
 ---
 
-## [Property binding](http://esri.github.io/angular-esri-map/#/patterns/property-binding) between Angular and JSAPI
+## [Property binding](http://esri.github.io/angular-esri-map/#/patterns/property-binding)
+## between Angular and JSAPI
 
 [![property_binding_chart](img/property_binding_chart.png)](http://esri.github.io/angular-esri-map/#/patterns/property-binding)
 
@@ -24,7 +25,7 @@
 
 - JSAPI async operations
 
-  - _using_ `esri/tasks/QueryTask`, `esri/geometry/geometryEngineAsync`, ...
+  - _using_ `esri/tasks/QueryTask`, `esri/geometry/geometryEngineAsync`, etc.
 
   - ... and then _updating_ data models bound to Angular
 
