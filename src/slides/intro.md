@@ -18,7 +18,7 @@ May not quite be ready for production apps
 ---
 
 <!-- .slide: data-background="img/angular-esri-map-v1-screenshot.png" -->
-#### We have a production ready solition
+#### We have a production ready solution
 
 ---
 

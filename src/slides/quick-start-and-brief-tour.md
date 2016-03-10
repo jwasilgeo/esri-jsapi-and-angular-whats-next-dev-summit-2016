@@ -69,11 +69,7 @@ _(directly from [README](https://github.com/Esri/angular-esri-map/blob/master/RE
 <!-- SceneView (3D) -->
 <esri-scene-view map="vm.map" 
     view-options="{
-        camera: {
-            position: [-118.25, 4.27, 6249238],
-            tilt: 30,
-            heading: 23
-        }
+        camera: { ... }
     }">
 </esri-scene-view>
 ```
@@ -102,6 +98,11 @@ _(directly from [README](https://github.com/Esri/angular-esri-map/blob/master/RE
   - `esriLoader.require()`
 
 - Code looks more like Esri JSAPI docs
+
+---
+
+## [Getting references to views](http://esri.github.io/angular-esri-map/#/patterns/references-to-views)
+## is straightforward
 
 ---
 
