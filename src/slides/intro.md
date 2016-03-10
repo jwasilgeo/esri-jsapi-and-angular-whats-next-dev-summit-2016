@@ -1,19 +1,19 @@
+<div>
+    <img src="img/esri.png" width="300" />
+    <i class="fa fa-heart fragment" style="display: inline-block; font-size: 200px; color: red;"></i>
+    <img src="img/angular2-logo.png" width="300" />
+</div>
+
+<h3 class="fragment">This should get easier over time</h3>
+
+---
+
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
 ## <i class="fa fa-exclamation-triangle"></i> Road Ahead
 
 <img src="img/warning-cyclist-4685661036_b937f5bb0b_z.jpg" width="480" />
 
 May not quite be ready for production apps
-
----
-
-<h2 class="fragment">This should get easier over time</h2>
-
-<div>
-    <img src="img/esri.png" width="300" />
-    <i class="fa fa-heart fragment" style="display: inline-block; font-size: 200px; color: red;"></i>
-    <img src="img/angular2-logo.png" width="300" />
-</div>
 
 ---
 
@@ -46,6 +46,13 @@ Will *not* support Angular 2.x
 
 ---
 
+<!-- .slide: data-background="reveal.js/img/bg-3.png" -->
+## [angular-esri-map](https://github.com/Esri/angular-esri-map/) 2.x
+
+ArcGIS API v 4.x in Angular 1.x apps
+
+---
+
 <!-- .slide: data-background="reveal.js/img/bg-6.png" -->
 ## Decreasing footprint of [angular-esri-map](https://github.com/Esri/angular-esri-map/)
 
@@ -54,15 +61,15 @@ Will *not* support Angular 2.x
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-3.png" -->
-## [angular-esri-map](https://github.com/Esri/angular-esri-map/) 2.x
+## Fewer Directives
 
-ArcGIS API v 4.x in Angular 1.x apps
+- ~~`<esri-map />`~~ <i class="fa fa-arrow-right"></i> `<esri-map-view />` or `<esri-scene-view />`
+- Only for objects with a UI footprint (dropped layer directives)
 
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-3.png" -->
-## TLDR: Fewer Directives, Same Services
+## Services are Central
 
-- ~~`<esri-map />`~~ <i class="fa fa-arrow-right"></i> `<esri-map-view />` or `<esri-scene-view />`
-- Only for objects with a UI footprint (dropped layer directives)
-- Services are unchanged, become more central
+- `esriLoader` and `esriRegistry` expose same API
+- `esriLoader` becomes more central
