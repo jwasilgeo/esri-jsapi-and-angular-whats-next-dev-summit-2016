@@ -2,9 +2,9 @@
 
 ## Widgets or directives or _?
 
----
+_(see patterns for [using & creating directives](http://esri.github.io/angular-esri-map/#/patterns/using-creating-widgets))_
 
-## Patterns for [Using & Creating Directives](http://esri.github.io/angular-esri-map/#/patterns/using-creating-widgets)
+---
 
 ## (1) JSAPI Out-of-the-Box Widget
 
@@ -14,16 +14,11 @@
 - `on-create` callback
   - wait for starting up widget UI and view model
 
-- `$scope.$on('$destroy'...)`
-  - use for proper tear-down
-
 ---
 
 ## Demo: [Search Widget](http://esri.github.io/angular-esri-map/#/examples/search) example
 
 ---
-
-## Patterns for [Using & Creating Directives](http://esri.github.io/angular-esri-map/#/patterns/using-creating-widgets)
 
 ## (2) JSAPI ViewModel within Directive
 
@@ -37,8 +32,6 @@
 ## Demo: [`<esri-home-button>`](http://esri.github.io/angular-esri-map/#/examples/home-button) example
 
 ---
-
-## Patterns for [Using & Creating Directives](http://esri.github.io/angular-esri-map/#/patterns/using-creating-widgets)
 
 ## (3) Directive _without_ JSAPI Widget or ViewModel
 
