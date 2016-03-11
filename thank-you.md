@@ -1,7 +1,5 @@
 # Thank You!
 
-TODO: SESSION RATING URL
-
 <div style="width:50%;float:left;">
     <p>
         @tomwayson

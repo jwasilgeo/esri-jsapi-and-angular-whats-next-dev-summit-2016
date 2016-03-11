@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>ArcGIS API for JavaScript and AngularJS: What's Next</title>
+    <title>ArcGIS API for JavaScript and AngularJS: What's New, What's Next</title>
 
 
     <meta name="description" content="Esri Dev Summit 2016 Presentation">
@@ -19,15 +19,59 @@
     <link rel="stylesheet" href="reveal.js/css/theme/esri-dev-summit-2016.css" id="theme">
 
     <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="reveal.js/lib/css/solarized_dark.css">
+    <link rel="stylesheet" href="reveal.js/css/color-brewer.css">
 
     <!-- for icons -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Custom Styles for our presentation -->
     <style>
+      #arcgis-api-for-javascript-and-angularjs- {
+        margin-top: 200px;
+      }
       .reveal section img {
         border: 0px;
+        background: none;
+        box-shadow: none;
+      }
+
+      /* overlay header */
+      .reveal h4 {
+          background: rgba(0,0,0,.5);
+          color:  #fff;
+          position: fixed;
+          width: calc(100% + 150px);
+          left: 0;
+          top: 280px;
+          margin-left: -75px;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 2em;
+          line-height: 2.1em;
+      }
+
+      /* overlay content */
+      .reveal .slim-shady {
+          background: rgba(0,0,0,0.5);
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 1em;
+          padding-bottom: 1em;
+      }
+
+      .reveal table.logos td {
+        border-bottom: 0;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .reveal .ie6-logo {
+        background-color: #fff;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
       }
     </style>
 
@@ -62,11 +106,24 @@
       you can override it on a slide by slide basis from within the MD. -->
       <!-- note for vertical stacks,  data-separator="^----$" data-separator-vertical="^---$" -->
       <div class="slides">
-        <section data-markdown="intro.md" data-background="reveal.js/img/title.png" ></section>
-        <section data-markdown="about-us.md" data-background="reveal.js/img/bg-1.png" ></section>
-        <section data-markdown="start-adding-slides.md" data-background="reveal.js/img/bg-3.png" data-separator-notes="^Note:"></section>
+        <section data-markdown="title.md" data-background="reveal.js/img/title.png" ></section>
+        
+        <!-- PART 1: angular-esri-map v2  -->
+        <section data-markdown="intro.md" data-background="reveal.js/img/bg-3.png" data-separator-notes="^Note:"></section>
+
+        <section data-markdown="quick-start-and-brief-tour.md" data-background="reveal.js/img/bg-3.png" data-separator-notes="^Note:"></section>
+        <section data-markdown="directives-for-widgets.md" data-background="reveal.js/img/bg-3.png" data-separator-notes="^Note:"></section>
+        <section data-markdown="angular-scope-tips.md" data-background="reveal.js/img/bg-3.png" data-separator-notes="^Note:"></section>
+
+        <!-- PART 2: Angular2  -->
+        <section data-markdown="angular-2.md" data-background="reveal.js/img/bg-3.png" data-separator-notes="^Note:"></section>
+        <section data-markdown="jwasilgeo-angular2-esri-playground.md" data-background="reveal.js/img/bg-3.png" data-separator-notes="^Note:"></section>
+        
+        <!-- FIN -->
+        <section data-markdown="conclusion.md" data-background="reveal.js/img/bg-5.png" ></section>
         <section data-markdown="resources.md" data-background="reveal.js/img/bg-5.png" ></section>
         <section data-markdown="thank-you.md" data-background="reveal.js/img/bg-4.png" ></section>
+        <section class="slide" data-background="img/survey.png" data-background-size="100%"></section>
         <section data-markdown="end.md" data-background="reveal.js/img/end.png" ></section>
       </div>
     </div>

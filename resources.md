@@ -1,6 +1,9 @@
 # Resources
 
-- TODO: ADD AMAZING RESOURCES?
+[angular-esri-map](http://esri.github.io/angular-esri-map)
 
-[developers.arcgis.com](https://developers.arcgis.com/web-appbuilder/)
+[esri-system-js](https://github.com/Esri/esri-system-js)
 
+[ArcGIS API for JavaScript Beta](https://developers.arcgis.com/javascript/beta/)
+
+[ArcGIS for Developers](https://developers.arcgis.com/)
