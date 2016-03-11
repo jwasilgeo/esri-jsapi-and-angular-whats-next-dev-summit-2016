@@ -76,7 +76,7 @@ _(directly from [README](https://github.com/Esri/angular-esri-map/blob/master/RE
 
 ---
 
-## What's new in **angular-esri-map v2**!
+## What's new in **angular-esri-map v2**?
 
 ---
 

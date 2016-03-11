@@ -25,7 +25,7 @@
 
 - JSAPI async operations
 
-  - _using_ `esri/tasks/QueryTask`, `esri/geometry/geometryEngineAsync`, etc.
+  - _using_ `esri/tasks/QueryTask`, `esri/geometry/geometryEngineAsync`, etc. ...
 
   - ... and then _updating_ data models bound to Angular
 
