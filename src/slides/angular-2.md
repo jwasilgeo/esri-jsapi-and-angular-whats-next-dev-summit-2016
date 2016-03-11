@@ -48,16 +48,6 @@ A few example apps using Angular 2 with the ArcGIS API for JavaScript
 
 ---
 
-<!-- .slide: data-background="img/esri-system-js-screenshot.png" -->
-#### Did extract one commmon pattern
-
----
-
-<!-- .slide: data-background="img/esri-system-js-screenshot.png" -->
-#### [esri-system-js](https://github.com/esri-system-js) load Esri from SystemJS
-
----
-
 ## [odoe/esrijs4-vm-angular2](https://github.com/odoe/esrijs4-vm-angular2)
 
 - Angular2 + Esri 4
@@ -65,6 +55,16 @@ A few example apps using Angular 2 with the ArcGIS API for JavaScript
 - View Models (Home Button)
 
 - Event binding
+
+---
+
+<!-- .slide: data-background="img/esri-system-js-screenshot.png" -->
+#### Did extract one commmon pattern
+
+---
+
+<!-- .slide: data-background="img/esri-system-js-screenshot.png" -->
+#### [esri-system-js](https://github.com/esri-system-js) load Esri from SystemJS
 
 ---
 
