@@ -24,7 +24,7 @@
         <!-- load AngularJS -->
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
         <!-- load angular-esri-map -->
-        <script src="//npmcdn.com/angular-esri-map@2.0.0-beta.2"></script>
+        <script src="//unpkg.com/angular-esri-map@2.0.0-beta.2"></script>
 
         <script type="text/javascript">
             angular.module('esri-map-example', ['esri.map'])
