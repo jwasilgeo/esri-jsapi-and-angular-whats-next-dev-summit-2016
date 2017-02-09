@@ -1,4 +1,4 @@
-# ArcGIS API for JavaScript and AngularJS: What's Next
+# ArcGIS API for JavaScript and AngularJS: What’s New, What’s Next
 
 The next major releases of AngularJS and the ArcGIS API for JavaScript (4.0) will introduce exciting new capabilities as well as significant changes. In this session, we’ll explore the development of next generation web mapping applications using the latest and greatest from each of these frameworks.
 
